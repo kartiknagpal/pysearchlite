@@ -4,7 +4,7 @@ Inspired by apache lucene core, can be used to search files on th e local filesy
 
 A successful search results is a python dictionary mapping each matched file to its search rank.<br/>
 Example,<br/>
-{ 'file1': search_rank, 'file2': search_rank}
+{ 'file1': search_rank, 'file2': search_rank}<br/>
 Note: search_rank is calculated by number of search words matched in the filename.
 
 ##Usage

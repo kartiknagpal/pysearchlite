@@ -46,7 +46,7 @@ class Search:
 
 if __name__ == '__main__':
 	from indexer import Index
-	index = Index(r'D:\Ent',filetype=('.mp4','.avi','.mkv'),index_mode='r')
+	index = Index('.',filetype=('.py',))
 
-	search = Search(r'paranorman',index)
+	search = Search('search',index)
 	print(search.get_search_result())

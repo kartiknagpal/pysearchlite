@@ -2,6 +2,11 @@
 
 Inspired by apache lucene core, this package can be used to search files on the local filesystem.<br/>
 
+pysearchlite uses a fast in-memory dictionary for indexing.<br/>
+The dict is kept in memory, so the dictionary operations run as fast as a regular dictionary.<br/>
+Index file format is selectable between pickle, json, and csv.<br/>
+All three serialization formats are backed by fast C implementations.<br/>
+
 A successful search results is a python dictionary mapping, each matched file to its search rank.<br/>
 Example,<br/>
 { 'file1': search_rank, 'file2': search_rank}<br/>
